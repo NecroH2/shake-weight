@@ -1,0 +1,75 @@
+header{
+    display: block;
+    width: 100%;
+    min-width: 360px;
+}
+
+.boxDog{
+    width: 100%;
+}
+
+#desc1{
+  font-size: 15px;
+  opacity: 0.5;
+  background-color: rgb(7, 0, 0);
+
+}
+
+#desc2, #desc3{
+   font-size: 15px;
+   opacity: 0.5;
+   background-color: rgb(7, 0, 0);
+}
+
+
+
+.boxDog img {
+    float: left;
+    border: solid black;
+    margin: 8px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#txtName
+{
+    margin-bottom:  12px;
+}
+#txtRut
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#txtRegion
+{
+    margin-left: 5px;
+    margin-bottom: 12px; 
+    
+}
+
+#txtTel{
+    margin-top:  10px;
+    margin-bottom: 10px;
+}
+
+#regionMarco
+{
+  border: black 0.1px solid;
+  padding: 2px;
+}
+
+#txtVivienda
+{
+    margin-top:  10px;
+}
+
+#ButtonGuardar
+{
+   margin-left: 130px;
+}
+
+footer{
+
+  min-width: 360px;
+}

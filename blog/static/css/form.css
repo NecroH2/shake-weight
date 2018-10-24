@@ -1,0 +1,78 @@
+form{
+    padding: 10px;
+    margin: auto;
+}
+#txtName
+{
+	margin-left: 90px;
+}
+
+#txtCorreo
+{
+	margin-left: 97px;
+    margin-top: 10px;
+}
+
+#txtRut
+{
+	margin-left: 120px;
+    margin-top: 10px;
+}
+
+#txtDate
+{
+	margin-left: 3px;
+    margin-top: 10px;
+}
+
+#txtTel{
+	margin-left: 3px;
+    margin-top: 10px;
+}
+
+#txtRegion
+{
+	margin-left: 95px;
+    margin-top: 10px;
+}
+
+#txtCity
+{
+	margin-left: 95px;
+    margin-top: 10px;
+}
+
+#txtVivienda
+{
+	margin-left: 85px;
+    margin-top: 10px;
+}
+button{
+    min-width: 48px;
+}
+
+#formulario{
+    display: flex;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #54A1F0;
+}
+
+#ButtonGuardar
+{
+   margin-left: 190px;
+}
+
+footer {
+ 
+margin-top: 280px;
+  bottom: 0;
+  
+}

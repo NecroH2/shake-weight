@@ -1,0 +1,37 @@
+li{
+    width: 100%;
+    border: solid black 0.5px;
+}
+
+body
+{
+	min-width: 360px;
+}
+
+#desc1{
+font-size: 10px;
+opacity: 0.5;
+background-color: rgb(7, 0, 0);
+}
+
+#desc2, #desc3{
+     font-size: 10px;
+   
+
+opacity: 0.5;
+background-color: rgb(7, 0, 0);
+}
+
+.boxDog img {
+margin-right: 65px;
+margin-left: 70px;
+max-height: 250px;
+max-width: 200px;
+   
+}
+
+
+#perritos{
+    border: none;  
+}
+

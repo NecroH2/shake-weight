@@ -1,0 +1,133 @@
+#icon{
+    float: right;
+}
+
+.carimg{
+    width: 100%;
+}
+
+h2, h5{
+    text-align: center;
+}
+
+h1{
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#desc1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: black 6px double;
+    background-color: #8ABB55;
+}
+
+#desc2, #desc3{
+    font-size: 23px;
+    border: black 6px double;
+    background-color: #8ABB55;
+}
+
+header{
+    background-color: green;
+    color: white;
+    display: flex;
+}
+
+article{
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 10px;
+}
+
+header, nav, main, article{
+    width: 100%;
+}
+
+main{
+    background-color: darkseagreen;
+    padding: 20px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.some{
+    float: none;
+}
+
+.on, .in{
+    text-align: center;
+}
+
+.ono, .ino{
+    font-size: 18px;
+    text-align: center;
+}
+
+#rescate, #rescate2{
+    width: 600px;
+    margin: auto;
+    display: block;
+}
+
+.ci{
+    float: none;
+}
+
+footer{
+    background-color: green;
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 10px
+}
+
+#contacto{
+    width: 100%;
+    float: none;
+    margin: auto;
+    
+    background-color: green;
+}
+
+.cont{
+    text-align: center;
+}
+
+#der{
+    width: 100%;
+    float: none;
+    margin: auto;
+    background-color: green;
+}
+
+.p{
+    margin-left: 10px;
+}
+
+#info{
+    padding: 30px;
+}
+
+.container{
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #54A1F0;
+}

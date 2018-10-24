@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mis Perris</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'css/menu.css' %}">
+  <link rel="icon" href="https://png.icons8.com/office/40/000000/dog-footprint.png"/>
+</head>
+{% block header %}
+<header>
+        <h1 id="head">AdoptDogs</h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="{% url 'index' %}" tabindex="1">Inicio</a></li>
+          <li><a href="{% url 'galeria' %}" tabindex="2">Perritos</a></li>
+          <li><a href="{% url 'formulario' %}" tabindex="3">Inscribete</a></li>
+        </ul>
+      </nav>
+  </header>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+<footer>
+  <div id="contacto">
+    <h4 class="cont" >INFORMACION DE CONTACTO</h4>
+    <br/>
+    <h5 class="cont" >TELÉFONO</h5>
+    <p class="cont" > <a href="tel:+56993545627">
+                +569 93 5456 27 </a> </p>
+    <br/>
+    <h5 class="cont" >CORREO ELECTRÓNICO</h5>
+    <p class="cont" ><a href="mailto:adopta@adoptdogs.cl">
+                adopta@adoptdogs.cl</a> </p>
+    <p class="p" >@ Todos los derechos reservados</p>
+  </div>
+  <br>
+  
+</footer>
+{% endblock %}

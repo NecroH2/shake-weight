@@ -1,0 +1,60 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/gal.css'%}">
+  <link rel="stylesheet" href="{% static 'css/form.css'%}">
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="{% static 'css/celu.css' %}">
+  <link rel="stylesheet" media="screen and (max-width: 450px)" href="{% static 'css/enano.css' %}">
+
+     <main>
+            <p id="gal" >→ Inscribete</p>
+            <h1 id="titulo" >Inscripcion</h1>
+     
+         <div id="formulario">
+            <form onSubmit="validate()" action="#">
+                    <label for="txtName">Nombre:</label>
+                    <input type="text" maxlength="50"
+                           minlength="3" id="txtName" 
+                    placeholder="Ingrese nombre" required/>
+                    <span id="nameValidator" style="color:red"></span>
+                    <br />
+                    <label for="txtCorreo">Correo:</label>
+                    <input type="email" id="txtCorreo"
+                    placeholder="Ingrese correo" required/>
+                    <br/>
+                    <label for="txtRut">Rut:</label>
+                        <input id="txtRut" type="text"
+                         onkeyup="modifyText()" placeholder="Ingrese Rut" required />    
+                    <br />
+                    <label for="txtDate">Fecha de Nacimiento:</label>
+                    <input type="date" id="txtDate" required max="2018-01-01" />
+                    <br />
+                    <label for="txtTel">Telefono de contacto:</label>
+                    <input type="number" id="txtTel" placeholder="Numero de telefono" required>
+                    <br/>
+                    <div id="regionMarco">
+                    <label for="txtRegion">Region:</label>
+                    <select id="txtRegion" oninput="selectCity()">  
+                    </select>
+                    <br />
+                    
+                    <label for="txtCity">Ciudad:</label>
+                    <select id="txtCity">
+                    </select>
+                    <br />
+                    </div>
+                    <label for="txtVivienda">Vivienda:</label>
+                    <select id="txtVivienda">     
+                    </select>
+                    <br />
+                    <br/>
+                    <div id="ButtonGuardar">
+                    <button>Guardar</button>
+                    </div>
+                </form>
+            </div>
+     </main>
+<script src="{% static 'js/rut.js' %}"></script>
+<script src="{% static 'js/cityS.js' %}"></script>
+</body>
+{% endblock %}
