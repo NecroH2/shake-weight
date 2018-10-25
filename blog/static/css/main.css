@@ -1,94 +1,87 @@
-#icon{
+.index #icon{
     float: right;
 }
 
-.carimg{
+.index .carimg{
     width: 100%;
 }
 
-h2, h5{
+.index h2, .index h5{
     text-align: center;
 }
 
-h1{
+.index h1{
     text-align: left;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-#desc1{
+.index #desc1{
     color: rgb(255, 255, 255);
     font-size: 18px;
     border: black 6px double;
     background-color: #8ABB55;
 }
 
-#desc2, #desc3{
+.index #desc2, .index #desc3{
     font-size: 23px;
     border: black 6px double;
     background-color: #8ABB55;
 }
 
-header{
+.index header{
     background-color: green;
     color: white;
     display: flex;
 }
 
-article{
+.index article{
     background-color: whitesmoke;
     height: 100%;
     padding: 10px;
 }
 
-header, nav, main, article{
+.index header, .index nav, .index main, .index article{
     width: 100%;
 }
 
-main{
+.index main{
     background-color: darkseagreen;
     padding: 20px;
 }
 
-body{
+.index body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
 }
 
-.some{
+.index .some{
     float: none;
 }
 
-.on, .in{
+.index .on, .index .in{
     text-align: center;
 }
 
-.ono, .ino{
+.index .ono, .index .ino{
     font-size: 18px;
     text-align: center;
 }
 
-#rescate, #rescate2{
+.index #rescate, .index #rescate2{
     width: 600px;
     margin: auto;
     display: block;
 }
 
-.ci{
+.index .ci{
     float: none;
 }
 
-footer{
-    background-color: green;
-    width: 100%;
-    color: white;
-    display: flex;
-    padding: 10px
-}
 
-#contacto{
+.index #contacto{
     width: 100%;
     float: none;
     margin: auto;
@@ -96,38 +89,38 @@ footer{
     background-color: green;
 }
 
-.cont{
+.index .cont{
     text-align: center;
 }
 
-#der{
+.index #der{
     width: 100%;
     float: none;
     margin: auto;
     background-color: green;
 }
 
-.p{
+.index .p{
     margin-left: 10px;
 }
 
-#info{
+.index #info{
     padding: 30px;
 }
 
-.container{
+.index .container{
     margin: auto;
 }
 
-img{
+.index img{
     max-width: 100%;
 }
 
-footer a{
+.index footer a{
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+.index footer a:hover{
     color: #54A1F0;
 }

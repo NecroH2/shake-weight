@@ -19,10 +19,11 @@ class Post(models.Model):
         return self.title
 
 class Perro(models.Model):
-        ESTADO = ((1,'Adoptado'),(2,'Rescatado'),(3,'Adoptado'))
+        ESTADO = ((1,'Disponible'),(2,'Rescatado'),(3,'Adoptado'))
         nombre = models.CharField(max_length=50)
         raza = models.CharField(max_length=50)
         desc = models.TextField()
+        estado = models.CharField(max_length=20, choices=ESTADO, default='Rescatado')
 
 class Usuario(models.Model):
         nombre = models.CharField(max_length=50)

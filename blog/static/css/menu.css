@@ -25,3 +25,11 @@ li a:hover {
 nav{
     margin-top: 15px;
 }
+
+footer{
+    background-color: green;
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 10px
+}
