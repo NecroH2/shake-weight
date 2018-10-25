@@ -17,3 +17,15 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Perro(models.Model):
+        ESTADO = ((1,'Adoptado'),(2,'Rescatado'),(3,'Adoptado'))
+        nombre = models.CharField(max_length=50)
+        raza = models.CharField(max_length=50)
+        desc = models.TextField()
+
+class Usuario(models.Model):
+        nombre = models.CharField(max_length=50)
+        mail = models.CharField(max_length=50)
+        rut = models.TextField()
+        fechanac = models.DateTimeField()

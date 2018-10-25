@@ -9,72 +9,21 @@
       <p id="gal" >→ Perritos</p>
     <h1 id="titulo" >PERRITOS EN ADOPCION</h1>
  	<div id="perritos">
+         {% if perros %}
+         {% for perro in perros %}
          <div class="boxDog">
             <p class="parrafo">
-            <img src="{% static 'img/boxdog1.jpg' %}" alt="perrito con miedo">
-             El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
+            <img src="{% static 'img/boxdog1.jpg' %}" alt="perrito con miedo">aasdas
             </p>
          </div>
-
-         <div class="boxDog">
-                <p class="parrafo">
-                <img src="{% static 'img/boxdog2.jpg' %}" alt="perrito de raza">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-                </p>
-         </div>
-
-        <div class="boxDog">
-            <p class="parrafo">
-                <img src="{% static 'img/boxdog3.jpg' %}" alt="terrier">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-            </p>
-        </div>
-        <div class="boxDog">
-                <p class="parrafo">
-                <img src="{% static 'img/boxdog4.jpg' %}" alt="perro chico">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-                </p>
-             </div>
-
-             <div class="boxDog">
-                    <p class="parrafo">
-                    <img src="{% static 'img/boxdog5.jpg' %}" alt="perrito con miedo">
-                     El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-                    </p>
-                 </div>
-
-        <div class="boxDog">
-            <p class="parrafo">
-                <img src="{% static 'img/boxdog6.jpg' %}" alt="perrito con miedo">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-            </p>
-        </div>
-
-        <div class="boxDog">
-                <p class="parrafo">
-                <img src="{% static 'img/boxdog7.jpg' %}" alt="perrito con miedo">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-                </p>
-             </div>
-        
-        <div class="boxDog">
-            <p class="parrafo">
-            <img src="{% static 'img/boxdog8.jpg' %}" alt="perrito con miedo">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-            </p>
-         </div>
-
-         <div class="boxDog">
-             <p class="parrafo">
-                <img src="{% static 'img/boxdog9.jpg' %}" alt="perrito con miedo">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-                </p>
-             </div>
-        <div class="boxDog">
-            <p class="parrafo">
-            <img src="{% static 'img/boxdog10.jpg'%}" alt="perrito con miedo">
-                 El es un kiltro, se llama Camilo y es timido pero tambien muy amigable cuando se siente protegido, tiene 3 años de edad y es muy jugueton. Fue rescatado por nuestro equipo, el estaba en situacion de calle, tenia signos de maltrato y era agresivo con la gente. Hoy ya rehabilitado es totalmente distinto.
-            </p>
+         {% endfor %}
+         {% else %}
+         <h1 id="error">No hay perros añadidos</h1>
+         {% endif %}
+         <div class="addog">
+                {% if user.is_authenticated %}
+                <a href="{% url 'addperro' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                {% endif %}
          </div>
      </div>
   </main>

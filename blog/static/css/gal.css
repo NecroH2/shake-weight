@@ -1,3 +1,22 @@
+.addog{
+    width: 100%;
+}
+
+.top-menu, .top-menu:visited {
+    color: green;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.top-menu:hover{
+    color: red;
+}
+
+#error{
+    color: black;
+}
+
 header{
     background-color: green;
     color: white;
