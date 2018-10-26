@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+{% block title %}Bievenido{% endblock %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <h1>Hola {{ user.username }}</h1>
+        <a href="{% url 'sign_out' %}">Cerrar sesión</a>
+    {% else %}
+        <a class="menu2" href="{% url 'sign_up' %}">Registrate</a>
+        <a href="{% url 'sign_in' %}">Iniciar sesión</a>
+    {% endif %}
+    
+{% endblock content %}
+</body>
+</html>

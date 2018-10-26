@@ -2,9 +2,20 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
 <link rel="stylesheet" media="screen and (max-width: 700px)" href="{% static 'css/celu.css' %}">
   <link rel="stylesheet" media="screen and (max-width: 450px)" href="{% static 'css/enano.css' %}">
 <body>
+<div class "login">
+
+    {% if user.is_authenticated %}
+    <h1>Hola {{ user.username }}</h1>
+    <a href="{% url 'sign_out' %}">Cerrar sesión</a>
+     {% else %}
+    <a href="{% url 'sign_up' %}">Registrate   ||</a>
+    <a href="{% url 'sign_in' %}">Iniciar sesión</a>
+    {% endif %}
+</div>
   <main>
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -27,7 +38,7 @@
       <div class="item">
         <img class="carimg" src="{% static 'img/rescate2.jpg' %}" alt="testimonio dos">
         <div class="carousel-caption d-none d-md-block">
-            <p id="desc2" >"Pensé que al ser un perro rescatado seria tímido y miedoso, pero gracias a dios, me equivoqué."</p>
+            <p id="desc2" >"Pensé que al ser un perro rescatado seria tímido y miedoso, pero gracias a dios me equivoqué."</p>
           </div>
       </div>
     
@@ -55,14 +66,14 @@
   <div class="some">
       <h2 class="in" >RESCATE</h2>
       <h4 class="in" >ETAPA UNO</h4>
-      <h6 class="in" >_______</h6>
+      <h6 class="in" >________</h6>
       <p class="ino" >Rescatamos perros en situacion de calle, abandonados o maltratados. Los rehabilitamos y los preparamos para buscarles un nuevo hogar.</p>
         <img id="rescate" src="{% static 'img/perrorad.jpeg' %}" alt="perro siendo rescatado">
   </div>
   <div class="some" >
       <h2 class="on" >CROWFUNDING</h2>
       <h4 class="on" >FINANCIAMIENTO</h4>
-      <h6 class="on" >_______</h6>
+      <h6 class="on" >________</h6>
       <p class="ono" >Sigue nuestras redes sociales para informarte acerca de las diversas campañas ya actividades que realizaremos para obtener financiamiento para seguir ayudando. </p>
           <img id="rescate2" src="{% static 'img/comida.jpg' %}" alt="perro siendo alimentado"> 
   </div>
