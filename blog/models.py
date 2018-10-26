@@ -48,4 +48,3 @@ class Perros(models.Model):
     nombre = models.CharField(max_length=100)
     desc = models.CharField(max_length=300)
     estado = models.CharField(max_length=20, choices=ESTADO)
-    imagen = models.ImageField(blank=True)
