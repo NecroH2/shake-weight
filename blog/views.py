@@ -53,9 +53,11 @@ def new_perro(request):
     if request.method == "POST":
         form = PerroForm(request.POST)
         if form.is_valid():
-            form.save()
+            perros = form.save(commit=False)
+            perros.author = request.user
+            perros.save()
         return redirect('galeria')
     else:
         form = PerroForm()
-    return render(request, 'blog/addperro.html', {'form': form})
+    return render(request, 'blog/galeria.html', {'form': form})
 # Create your views here.

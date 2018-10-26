@@ -24,5 +24,6 @@ class SignUpForm(UserCreationForm):
 class PerroForm(forms.ModelForm):
     class Meta:
         model = Perros
-        fields = ['nombre','raza','desc', 'estado']
-        labels = {'nombre':'Nombre','raza':'Raza','estado':'Estado', 'desc':'Descripcion'}
+        fields = ['nombre','raza','desc', 'estado', 'imagen']
+        labels = {'nombre':'Nombre','raza':'Raza','estado':'Estado', 
+        'desc':'Descripcion', 'imagen':'Imagen'}
