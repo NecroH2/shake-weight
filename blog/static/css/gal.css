@@ -35,25 +35,25 @@ main{
 
 .boxDog {
     padding: 5px;
-   
     width: 50%;
-
-
+    border: solid black;
 }
+
+.boxDog a{
+    color: black;
+}
+
 .boxDog img {
     float: left;
     border: solid black;
-  
-    margin-left: 30px;
+    margin-left: 2px;
     margin-right: 15px;
 }
 
 .parrafo{
     margin: auto;
     float: left;
-    border: solid silver;
     font-size: 16px; 
-
 }
 
 
@@ -107,5 +107,28 @@ footer a{
 
 footer a:hover{
     color: #54A1F0;
+}
+
+
+.top-menu, .top-menu:visited {
+    color: green;
+    float: left;
+    font-size: 26pt;
+    margin-left: 20px;
+}
+
+.top-menu:hover{
+    color: red;
+}
+
+#pencil{
+    color: green;
+    margin-left: 40px;
+    min-width: 48px;
+    min-height: 48px
+}
+
+#pencil:hover{
+    color: red;
 }
 

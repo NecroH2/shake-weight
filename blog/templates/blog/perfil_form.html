@@ -12,7 +12,7 @@
 <body>
     {% block content %}
     <div class="contenedor-form"> 
-            <a href="{% url 'sign_in' %}">Iniciar Sesion</a>
+            <a href="{% url 'sign_in' %}" style="color: white" style="text-decoration: none" > <p class="IniciarSesion">Iniciar Sesion</p></a>
             <div class="formulario">     
                 <h2>Registrarse</h2>
                 <form action="" method="POST">
@@ -25,3 +25,4 @@
     {% endblock content %}
 </body>
 </html>
+

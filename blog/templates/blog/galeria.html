@@ -1,9 +1,11 @@
 {% extends 'blog/base.html' %}
 {% load static %}
 {% block content %}
+<head>
   <link rel="stylesheet" href="{% static 'css/gal.css' %}">
   <link rel="stylesheet" media="screen and (max-width: 700px)" href="{% static 'css/celu.css' %}">
-  <link rel="stylesheet" media="screen and (max-width: 450px)" href="{% static 'css/enano.css' %}">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="{% static 'css/enano.css' %}">
+ </head>
 <body>
   <main>
       <p id="gal" >→ Perritos</p>
@@ -13,16 +15,26 @@
          <div class="boxDog">
             <p class="parrafo">
               <img src="/media/{{ perros.imagen }}" width="200">
-              <p>{{ perros.nombre }}</p>
-              <p>{{ perros.raza }}</p>
-              <p>{{ perros.estado }}</p>
-              <p>{{ perros.desc }}</p>
+              <p>Nombre: {{ perros.nombre }}</p>
+              <p>Raza: {{ perros.raza }}</p>
+              <p>Estado: {{ perros.estado }}</p>
+              <p>Descripcion: {{ perros.desc }}</p>
             </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'adopt' pk=perros.pk %}" ><button>Adoptar</button></a>
+            {% endif %}
+            {% if user.is_superuser %}
+            <a id="pencil" href="{% url 'edit_perro' pk=perros.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            {% endif %}
          </div>
          {% endfor %}
-         {% if user.is_authenticated %}
+         {% if user.is_superuser %}
+         <div class="boxDog">
+         
             <a href="{% url 'new_perro' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
+            
+          </div>
+          {% endif %}
      </div>
   </main>
 </body>

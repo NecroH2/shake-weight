@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 
-    <title>Iniciar Sesion</title>
+    <title>Inicia sesion</title>
 </head>
 <body>
     {% block content %}
         <div class="contenedor-form"> 
-                <a href="{% url 'sign_up' %}"> <p>Crear Cuenta</p></a>  
+                <a href="{% url 'sign_up' %}"  style="color: white" style="text-decoration: none"> <p>Crear Cuenta</p></a>  
                     <div class="formulario">  
                         <h2>Iniciar Sesión</h2>
                         <form action="#" method="POST">
@@ -22,7 +22,7 @@
                             <input type="submit" name="submit">       
                         </form>
                         <div class="reset-password">
-                            <a href="#">¿Olvido su Contraseña?</a>
+                            <a href="{% url 'password_reset' %">¿Olvido su Contraseña?</a>
                         </div>
                     </div>
         </div>

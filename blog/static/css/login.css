@@ -60,7 +60,8 @@ body {
     width: 100%;
     padding: 10px 15px;
     margin: 0 0 20px 0;
-    background: rgba(0,0,0,.5);
+
+    background:#DCE0FE;
 
     border: none;
     border-radius: 2px;
@@ -125,3 +126,12 @@ body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.Registrarse{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
